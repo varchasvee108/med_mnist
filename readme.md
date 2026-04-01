@@ -60,28 +60,10 @@ make infer
 python -m scripts.infer
 ```
 
-### Training Performance
-
 The following plots visualize the training loss and validation accuracy during the model's training on the PathMNIST dataset:
 
-<p align="center">
-  <img src="visuals/train_loss.png" width="45%" alt="Training Loss" />
-  <img src="visuals/val_acc.png" width="45%" alt="Validation Accuracy" />
-</p>
-
-### Code Formatting and Linting
-
-Maintain code quality with `black` and `isort`:
-
-**Using Make:**
-```bash
-make lint
-```
-
-**Using Python:**
-```bash
-black . && isort .
-```
+![Training Loss](visuals/train_loss.png)
+![Validation Accuracy](visuals/val_acc.png)
 
 ## Features
 

@@ -1,4 +1,4 @@
-.PHONY: install train infer lint clean
+.PHONY: install train infer
 
 install:
 	pip install -e .
