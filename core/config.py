@@ -8,7 +8,6 @@ class ModelConfig:
     img_size: tuple[int, int]
     patch_size: tuple[int, int]
     in_channels: int
-    num_classes: int
     embd_dim: int
     num_heads: int
     num_layers: int
