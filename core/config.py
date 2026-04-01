@@ -23,6 +23,7 @@ class TrainingConfig:
     weight_decay: float
     betas: tuple[float, float]
     lr: float
+    batch_size: int
 
 
 @dataclass
