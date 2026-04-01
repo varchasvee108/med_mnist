@@ -14,6 +14,7 @@ class ModelConfig:
     num_layers: int
     mlp_ratio: int
     dropout: float
+    num_classes: int
 
 
 @dataclass
