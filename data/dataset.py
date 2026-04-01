@@ -8,6 +8,6 @@ def get_transforms():
 
 def get_dataset(split: str, data_dir: str):
     dataset = PathMNIST(
-        split=split, root=data_dir, transform=get_transforms, download=True
+        split=split, root=data_dir, transform=get_transforms(), download=True
     )
     return dataset
