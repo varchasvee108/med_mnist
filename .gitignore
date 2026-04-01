@@ -49,8 +49,6 @@ data/splits/*
 data/cache/*
 outputs/
 outputs/*
-visuals/
-visuals/*
 
 # Audio / Feature caches
 *.wav
