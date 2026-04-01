@@ -19,7 +19,7 @@ class ViT(nn.Module):
             [TransformerBlock(config) for _ in range(config.model.num_layers)]
         )
         self.norm = nn.LayerNorm(config.model.embd_dim)
-        self.head = nn.Linear(config.model.embd_dim, config.data.num_classes)
+        self.head = nn.Linear(config.model.embd_dim, config.model.num_classes)
 
     def forward(self, x):
         B = x.shape[0]
