@@ -1,3 +1,11 @@
+---
+title: MedMNIST ViT Demo
+sdk: gradio
+app_file: app.py
+---
+
+
+
 # Medical Image Classification for MedMNIST
 
 This project implements a Vision Transformer (ViT) model to classify medical images, specifically targeting the PathMNIST dataset from the MedMNIST collection. It provides a modularized codebase for training, evaluating, and inferring on medical image data.
@@ -51,6 +59,15 @@ make infer
 ```bash
 python -m scripts.infer
 ```
+
+### Training Performance
+
+The following plots visualize the training loss and validation accuracy during the model's training on the PathMNIST dataset:
+
+<p align="center">
+  <img src="visuals/train_loss.png" width="45%" alt="Training Loss" />
+  <img src="visuals/val_acc.png" width="45%" alt="Validation Accuracy" />
+</p>
 
 ### Code Formatting and Linting
 

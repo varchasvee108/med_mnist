@@ -110,11 +110,13 @@ def train():
 
 
 @torch.no_grad()
-def evaluate(model, loader, device):
+def evaluate(model, loader, device, max_batches=50):
     model.eval()
     correct, total = 0, 0
 
-    for images, labels in loader:
+    for i, (images, labels) in enumerate(loader):
+        if i >= max_batches:
+            break
         images = images.to(device)
         labels = labels.to(device).squeeze().long()
 

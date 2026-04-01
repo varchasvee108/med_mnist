@@ -50,7 +50,7 @@ def create_scheduler(
     config: Config, optimizer: torch.optim.Optimizer
 ) -> torch.optim.lr_scheduler._LRScheduler:
     return get_scheduler(
-        name="linear",
+        name="cosine",
         optimizer=optimizer,
         num_warmup_steps=config.training.warmup_steps,
         num_training_steps=config.training.max_steps,

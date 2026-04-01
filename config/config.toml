@@ -3,14 +3,14 @@ img_size = [28, 28]
 patch_size = [7,7]
 in_channels = 3
 num_classes = 9
-embd_dim = 128
+embd_dim = 256
 num_heads = 4
-num_layers = 6
+num_layers = 8
 mlp_ratio = 4
 dropout = 0.1
 
 [training]
-max_steps = 10000
+max_steps = 20000
 warmup_steps = 1000
 weight_decay = 0.1
 betas = [0.9, 0.95]

@@ -47,6 +47,10 @@ data/datasets/*
 data/splits/*
 !data/splits/.gitkeep
 data/cache/*
+outputs/
+outputs/*
+visuals/
+visuals/*
 
 # Audio / Feature caches
 *.wav
